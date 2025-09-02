@@ -2,17 +2,17 @@
 
 SELECT *
 FROM CONSOLIDATED_BUY_INVOICES
--- FROM buy_line_items
--- where tax_number = '27AAICC8838P1ZR'
--- where registration_number = 'AABCC6364M'
+FROM buy_line_items
+where tax_number = '27AAICC8838P1ZR'
+where registration_number = 'AABCC6364M'
 where status = 'active'
 
 
 SELECT * 
 FROM shipment_stakeholder_pocs
--- FROM buy_line_items
--- where tax_number = '27AAICC8838P1ZR'
--- where registration_number = 'AABCC6364M'
+FROM buy_line_items
+where tax_number = '27AAICC8838P1ZR'
+where registration_number = 'AABCC6364M'
 where service_type = 'fcl_freight_service'
 
 
@@ -34,5 +34,6 @@ select *
 from revenue_desk_showed_rates
 where shipment_id = 'f9fa84bc-b6e9-4666-ba35-4d33391ef04f'
 AND service_type = 'fcl_freight_service'
+
 
 
