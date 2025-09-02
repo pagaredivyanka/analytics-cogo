@@ -1,0 +1,10 @@
+how purchase invoice mapped to shipment_stakeholder 
+
+
+select * 
+from shipment_stakeholders
+where shipment_id = 'f9fa84bc-b6e9-4666-ba35-4d33391ef04f'
+AND type = 'service_provider'
+AND status = 'active'
+
+

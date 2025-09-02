@@ -1,0 +1,3 @@
+select *
+from sell_invoices 
+where invoice_number IN ('SO/2526/10298482', 'SO/2526/10296964', 'SO/2526/10297849');
