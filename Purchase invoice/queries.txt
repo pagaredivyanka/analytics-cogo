@@ -1,0 +1,38 @@
+
+
+SELECT *
+FROM CONSOLIDATED_BUY_INVOICES
+-- FROM buy_line_items
+-- where tax_number = '27AAICC8838P1ZR'
+-- where registration_number = 'AABCC6364M'
+where status = 'active'
+
+
+SELECT * 
+FROM shipment_stakeholder_pocs
+-- FROM buy_line_items
+-- where tax_number = '27AAICC8838P1ZR'
+-- where registration_number = 'AABCC6364M'
+where service_type = 'fcl_freight_service'
+
+
+-- how purchase invoice mapped to shipment_stakeholders
+select * 
+from shipment_stakeholders
+where shipment_id = 'f9fa84bc-b6e9-4666-ba35-4d33391ef04f'
+AND type = 'service_provider'
+AND status = 'active'
+
+
+-- purchase invoice in shipment_stakeholder_pocs
+select *
+from shipment_stakeholder_pocs
+where shipment_id = 'f9fa84bc-b6e9-4666-ba35-4d33391ef04f'
+AND service_type = 'fcl_freight_local_service'
+
+select *
+from revenue_desk_showed_rates
+where shipment_id = 'f9fa84bc-b6e9-4666-ba35-4d33391ef04f'
+AND service_type = 'fcl_freight_service'
+
+
